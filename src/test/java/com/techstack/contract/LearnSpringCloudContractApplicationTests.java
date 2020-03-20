@@ -1,7 +1,6 @@
 package com.techstack.contract;
 
 import com.github.tomakehurst.wiremock.client.WireMock;
-import org.apache.http.impl.conn.Wire;
 import org.assertj.core.api.BDDAssertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
