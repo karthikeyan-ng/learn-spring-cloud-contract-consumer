@@ -20,7 +20,7 @@ import org.springframework.web.client.RestTemplate;
 @AutoConfigureJsonTesters
 @DirtiesContext
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.NONE)
-class LearnSpringCloudContractApplicationTests {
+class LearnSpringCloudContractConsumerApplicationTests {
 
 	@Test
 	void contextLoads() {
