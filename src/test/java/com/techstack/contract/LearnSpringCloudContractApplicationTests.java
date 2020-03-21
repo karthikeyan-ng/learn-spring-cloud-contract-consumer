@@ -30,4 +30,16 @@ class LearnSpringCloudContractApplicationTests {
 		BDDAssertions.then(response.getStatusCode().value()).isEqualTo(201);
 		BDDAssertions.then(response.getBody()).isEqualTo(json);
 	}
+
+    @Test
+    public void test_should_return_all_employee_name_integration() {
+
+        String json = "[\"Pascal\",\"Thomas\"]";
+
+        RestTemplate restTemplate = new RestTemplate();
+        ResponseEntity<String> response = restTemplate.getForEntity("http://localhost:8082/employees", String.class);
+
+        BDDAssertions.then(response.getStatusCode().value()).isEqualTo(201);
+        BDDAssertions.then(response.getBody()).isEqualTo(json);
+    }
 }
